@@ -13,7 +13,7 @@ $(document).ready(function () {
     event.preventDefault();
 
     // Send the data using post
-    var url = "http://localhost:5000"
+    var url = "http://localhost:5000/response/"
     var get = $.get( url );
 
     // Put the results in a div

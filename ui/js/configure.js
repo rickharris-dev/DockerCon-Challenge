@@ -13,12 +13,11 @@ $(document).ready(function () {
     event.preventDefault();
 
     // Get some values from elements on the page:
-    var $form = $( this ),
-      term = $form.find( "input[name='repository']" ).val(),
-      url = 'http://localhost:5000';
+    term = document.getElementById('repository').value;
+    url = 'http://localhost:5000/' + encodeURI(term);
 
     // Send the data using post
-    var posting = $.post( url, { repo: term } );
+    var posting = $.get( url );
 
     // Put the results in a div
     posting.done(function( data ) {
