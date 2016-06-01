@@ -1,0 +1,13 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 60px;
+}
+
+.bg-info {
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
