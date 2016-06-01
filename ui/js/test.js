@@ -18,8 +18,7 @@ $(document).ready(function () {
 
     // Put the results in a div
     get.done(function( data ) {
-      $( "#result" ).find('h2').text("Success");
-      $( "#result" ).find('p').text("This is successful.")
+      document.getElementById('result').innerHTML = data;
     });
   });
 });
